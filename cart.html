@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корзина - Цветочный магазин</title>
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./cart.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" />
+    <style>
+      
+      .cart-nav-panel {
+        width: 100%;
+        max-width: 1200px;
+        margin: 30px auto 0;
+        display: flex;
+        gap: 20px;
+        padding: 0 20px;
+      }
+
+      .cart-nav-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 22px;
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(214, 51, 132, 0.15);
+        border-radius: 50px;
+        text-decoration: none;
+        color: #4F4F4F;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: all 0.3s ease;
+      }
+
+      .cart-nav-btn:hover {
+        background: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(214, 51, 132, 0.1);
+        color: #D63384;
+      }
+
+      .cart-nav-btn svg {
+        stroke: currentColor;
+      }
+
+      
+      .cart-header-section {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cart-page-container">
+      
+      <nav class="cart-nav-panel">
+        <a href="main.html" class="cart-nav-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          <span>На главную</span>
+        </a>
+        <a href="catalog.html" class="cart-nav-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          <span>В каталог</span>
+        </a>
+      </nav>
+
+      <header class="cart-header-section">
+        <div class="logo-wrapper">
+          <img
+            class="main-logo-icon"
+            loading="lazy"
+            alt="Logo"
+            src="./public/f11c56f0-dffe-42b3-a3c1-0b664d5c0c92-2@2x.png"
+          />
+          <h1 class="cart-main-title">Корзина</h1>
+        </div>
+      </header>
+
+      <main class="cart-main-content">
+        <div class="cart-grid-layout">
+          
+          <section class="cart-items-column">
+            
+            <div class="product-card">
+              <div class="product-main-info">
+                <img class="product-thumb" alt="Лилии" src="./public/048b2ea80faf2f4f4cbcf9f87032ce18-1@2x.png" />
+                <div class="product-text-details">
+                  <b class="product-name">Букет из лилий</b>
+                  <div class="product-meta">
+                    <span class="quantity-text">1 шт</span>
+                    <div class="vertical-divider"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-actions">
+                <b class="product-price">15.000</b>
+                <button class="action-btn">Купить</button>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-main-info">
+                <img class="product-thumb" alt="Пионы" src="./public/11bad388e00444a0666113b5b73340a7-1@2x.png" />
+                <div class="product-text-details">
+                  <b class="product-name">Букет из пионов</b>
+                  <div class="product-meta">
+                    <span class="quantity-text">1 шт</span>
+                    <div class="vertical-divider"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-actions">
+                <b class="product-price">10.000</b>
+                <button class="action-btn">Купить</button>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="product-main-info">
+                <img class="product-thumb" alt="Розы" src="./public/75e46ba924ac343407146504186d44bc-1@2x.png" />
+                <div class="product-text-details">
+                  <b class="product-name">Букет из роз</b>
+                  <div class="product-meta">
+                    <span class="quantity-text">1 шт</span>
+                    <div class="vertical-divider"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-actions">
+                <b class="product-price">8.000</b>
+                <button class="action-btn">Купить</button>
+              </div>
+            </div>
+
+          </section>
+
+          <aside class="cart-summary-aside">
+            <div class="summary-box">
+              <b class="summary-total-label">Итого: 33.000</b>
+              <div class="summary-items-list">
+                <div class="summary-row">
+                  <span>Букет из лилий 1 шт</span>
+                  <b>15.000</b>
+                </div>
+                <div class="summary-row">
+                  <span>Букет из пионов 1 шт</span>
+                  <b>10.000</b>
+                </div>
+                <div class="summary-row">
+                  <span>Букет из роз 1 шт</span>
+                  <b>8.000</b>
+                </div>
+              </div>
+              <button class="pay-all-button">Оплатить всё</button>
+            </div>
+          </aside>
+
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

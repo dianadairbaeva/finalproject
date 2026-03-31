@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог - Магазин цветов</title>
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./catalog.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap" />
+    <style>
+      
+      .catalog-nav {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      .nav-btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 20px;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(214, 51, 132, 0.2);
+        border-radius: 50px;
+        text-decoration: none;
+        color: var(--color-palevioletred-200);
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+      }
+
+      .nav-btn:hover {
+        background: var(--color-pink-200);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      }
+
+      .cart-count-badge {
+        background: var(--color-palevioletred-200);
+        color: white;
+        font-size: 10px;
+        padding: 2px 6px;
+        border-radius: 10px;
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="catalog-page">
+      
+      <nav class="catalog-nav">
+        <a href="main.html" class="nav-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          <span>На главную</span>
+        </a>
+        
+        <a href="cart.html" class="nav-btn">
+          <span>Корзина</span>
+          <span class="cart-count-badge">1</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+        </a>
+      </nav>
+
+      <header class="catalog-header">
+        <h1 class="catalog-title">Каталог</h1>
+      </header>
+
+      <main class="catalog-grid">
+        <div class="catalog-item">
+          <div class="image-box">
+            <img class="flower-img" alt="Лилии" src="./public/pngtree-pink-lily-flower-transparent-background-png-image-20420612-1@2x.png" />
+          </div>
+          <h3 class="flower-name">ЛИлии</h3>
+        </div>
+
+        <div class="catalog-item">
+          <div class="image-box">
+            <img class="flower-img" alt="Розы" src="./public/rose-flower-png-isolated-transparent-background-191095-12176-1@2x.png" />
+          </div>
+          <h3 class="flower-name">розы</h3>
+        </div>
+
+        <div class="catalog-item">
+          <div class="image-box">
+            <img class="flower-img" alt="Гортензии" src="./public/pngtree-a-lush-white-hydrangea-bloom-with-delicate-petals-and-green-leaves-png-image-15318783-1@2x.png" />
+          </div>
+          <h3 class="flower-name">гортензии</h3>
+        </div>
+
+        <div class="catalog-item">
+          <div class="image-box">
+            <img class="flower-img" alt="Тюльпаны" src="./public/pngtree-single-red-tulip-bloom-png-image-16204894-1@2x.png" />
+          </div>
+          <h3 class="flower-name">тюльпаны</h3>
+        </div>
+
+        <div class="catalog-item">
+          <div class="image-box">
+            <img class="flower-img" alt="Орхидеи" src="./public/pngtree-orchid-isolated-on-transparent-background-png-image-16977048-1@2x.png" />
+          </div>
+          <h3 class="flower-name">орхидеи</h3>
+        </div>
+
+        <div class="catalog-item">
+          <div class="image-box">
+            <img class="flower-img" alt="Пионы" src="./public/edd742125412f8bc20f10090b7249a1f-1@2x.png" />
+          </div>
+          <h3 class="flower-name">пионы</h3>
+        </div>
+      </main>
+
+    </div>
+  </body>
+</html>
