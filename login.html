@@ -64,15 +64,14 @@
             <p class="subtitle">Пожалуйста, введите ваши данные для входа</p>
           </div>
 
-          <form class="auth-form">
+          <form class="auth-form" id="loginForm">
             <div class="input-block">
-              <label>E-mail</label>
-              <input type="email" placeholder="Введите ваш e-mail" required />
+                <label>E-mail</label>
+                <input type="email" name="email" placeholder="Введите ваш e-mail" required />
             </div>
-
             <div class="input-block">
-              <label>Password</label>
-              <input type="password" placeholder="Введите ваш пароль" required />
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Введите ваш пароль" required />
             </div>
 
             <div class="form-options">
@@ -94,5 +93,6 @@
       </main>
 
     </div>
+    <script src="js/auth.js"></script>
   </body>
 </html>
